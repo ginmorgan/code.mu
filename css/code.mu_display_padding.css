@@ -1,0 +1,78 @@
+.div {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrap-1 {
+  border: 2px dotted gray;
+  padding: 60px;
+}
+
+.div-first {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  margin-bottom: 50px;
+}
+
+.div-second {
+  border: 1px solid green;
+  width: 200px;
+  padding: 35px;
+  text-align: justify
+}
+
+.wrap-2 {
+  width: 700px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrap-3 {
+  width: 700px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+}
+
+#rubber {
+    width: 50%; /* Понять почему */
+    min-width: 300px;
+    max-width: 650px;
+    margin: 50px auto; /* Понять почему */
+    padding: 30px;
+    text-align: justify;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.wrap-4 {
+  width: 600px;
+  border: 2px dotted gray;
+  border-radius: 10px;
+  padding: 25px 20px;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrap-4 p {
+  margin: 0;
+}
+
+#monkey-1 {
+  padding-right: 20px;
+  float: left;
+}
+
+#monkey-2 {
+  float: right;
+  padding-left: 20px;
+}
