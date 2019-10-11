@@ -225,23 +225,28 @@
     background-color: blue;
     mix-blend-mode: luminosity;
 }
-
-/* Изменение цвета png при наведении курсора */
-
-.color_png {
+/* Orange */
+.orange {
+    font-family: Arial;
     display: block;
-    background-color: blue;
-
+    font-size: 13px;
+    padding: 1px;
+    margin: 0px;
+    background-color: orange;
 }
 
-.color_png a {
-    display: block;
-    height: 840px;
-    width: 840px;
-    padding-top: 30px;
-    background: url(/img/rocket.png) no-repeat top center;
+.orange li {
+  list-style: none;
+  display: inline-block;
 }
 
-.color_png a:hover {
-    mix-blend-mode: luminosity;
+.orange a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 13px;
+}
+
+.orange a:hover {
+  background-color: crimson;
 }

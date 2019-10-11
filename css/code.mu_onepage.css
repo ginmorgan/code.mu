@@ -1,0 +1,33 @@
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.block {
+  display: block;
+  border: 1px solid black;
+  margin:5px;
+  padding: 0px 20px 50px;
+}
+
+.block p {
+  text-align: justify;
+}
+
+.block a {
+  text-decoration: none;
+  color: blue;
+}
+
+.block a:hover {
+  text-decoration: underline;
+}
+
+a.more {
+ float: right;
+}
+
+.block img {
+  float: left;
+  margin-right: 10px;
+}
