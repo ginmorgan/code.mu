@@ -1,0 +1,247 @@
+.div_1 {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
+    border: 2px dotted black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu_simple li {
+    padding-left: 5px;
+    color: blue;
+}
+
+.menu_simple a {
+    text-decoration: none;
+}
+
+.menu_simple a:visited {
+    color: blue;
+}
+
+.menu_simple a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.div_2 {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
+    border: 2px dotted black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu_block li {
+    width: 200px;
+    list-style-type: none;
+    display: block;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.menu_block a {
+    display: block;
+    width: 205px;
+    text-decoration: none;
+    color: blue;
+}
+
+.menu_block a:hover {
+    font-weight: 600;
+}
+
+/**/
+
+.div_3 {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
+    border: 2px dotted black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu_block_gray li {
+    background-color: gray;
+    width: 200px;
+    list-style-type: none;
+    display: block;
+    border: 1px solid black;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.menu_block_gray a {
+    padding: 0 5px;
+    color: white;
+    display: block;
+    width: 190px;
+    text-decoration: none;
+}
+
+.menu_block_gray a:hover {
+    background-color: white;
+    font-weight: 600;
+    color: dimgray;
+}
+
+/**/
+
+.menu_block_blue li {
+    background-color: dodgerblue;
+    list-style-type: none;
+    width: 200px;
+    display: block;
+    border: 1px solid black;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.menu_block_blue a {
+    padding: 0 5px;
+    color: white;
+    display: block;
+    width: 190px;
+    text-decoration: none;
+}
+
+.menu_block_blue a:hover {
+    background-color: white;
+    font-weight: 600;
+    color: blue;
+    background-image: url(/img/bluefly.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+}
+
+.menu_block_blue a.active {
+    font-weight: 600;
+    color: blue;
+    background-color: white;
+    background-image: url(/img/bluefly.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+}
+
+/**/
+.div_4 {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 15px;
+    border: 2px dotted black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu_line li {
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid blue;
+
+    margin-bottom: 5px;
+}
+
+.menu_line a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 5px;
+}
+
+.menu_line a:hover {
+    background: gray;
+    color: white;
+}
+
+.menu_line a.active {
+    background: gray;
+    color: white;
+}
+
+/**/
+.div_5 {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 15px;
+    border: 2px dotted black;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+.menu_tourist li {
+    width: auto;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10px;
+    
+   
+}
+
+.menu_tourist a {
+    width: auto;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding-top: 30px;
+    vertical-align: bottom;
+}
+
+#a1 {
+    background: url(/img/tourist-1.png) no-repeat top center;
+}
+
+#a2 {
+    background: url(/img/tourist-2.png) no-repeat top center;
+}
+
+#a3 {
+    background: url(/img/tourist-3.png) no-repeat top center;
+}
+
+#a4 {
+    background: url(/img/tourist-4.png) no-repeat top center;
+}
+
+#a5 {
+    background: url(/img/tourist-5.png) no-repeat top center;
+}
+
+.menu_tourist a:hover {
+    color: blue;
+    background-color: blue;
+    mix-blend-mode: luminosity;
+}
+
+/* Изменение цвета png при наведении курсора */
+
+.color_png {
+    display: block;
+    background-color: blue;
+
+}
+
+.color_png a {
+    display: block;
+    height: 840px;
+    width: 840px;
+    padding-top: 30px;
+    background: url(/img/rocket.png) no-repeat top center;
+}
+
+.color_png a:hover {
+    mix-blend-mode: luminosity;
+}
