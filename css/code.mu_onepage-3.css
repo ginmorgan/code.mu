@@ -1,0 +1,62 @@
+.container {
+  width: 730px;
+  margin: 0 auto;
+  border: 1px solid black;
+
+
+}
+
+h1 {
+  text-align: center
+}
+
+.block-3 {
+  display: block;
+  padding: 0px 15px 30px;
+}
+
+.block-3 p {
+  line-height: 30px;
+  font-family: Arial;
+  font-size: 13px;
+  text-indent: 48px;
+  text-align: justify;
+}
+
+p a.link_span {
+  color: green;
+  font-weight: bold;
+}
+
+p a.link_span:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+.block-3 a {
+  text-decoration: none;
+  color: deeppink;
+}
+
+a.more {
+  float: right;
+  display: block;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+a.more:hover {
+  background-color: hotpink;
+  color: white;
+}
+  
+
+.link_h2:hover {
+  color: black;
+  text-decoration: underline;
+}

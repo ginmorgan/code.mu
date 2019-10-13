@@ -1,0 +1,64 @@
+.container {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.nav {
+  display: block;
+  background-color: dimgray;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.nav li:hover {
+  background-color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.content {
+  padding: 0 10px;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.content p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.content a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
