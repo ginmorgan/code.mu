@@ -1,0 +1,41 @@
+* {
+
+  margin: 0px;
+  padding: 0;
+}
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.left, .right {
+  width: 150px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+    outline: 1px solid gray;
+}
+
+.right {
+  float:right;
+    outline: 1px solid gray;
+}
+
+.content {
+  height: 150px;
+  margin-left: 240px;
+  margin-right: 240px;
+    outline: 1px solid gray;
+}
+
+#center .left, #center .right, #center .content {
+  height: 450px;
+}
+
+#top, #center {
+  margin-bottom: 40px;
+}

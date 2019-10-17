@@ -1,0 +1,42 @@
+.clearfix {
+  clear: both;
+}
+
+header,
+.left,
+.content,
+.right,
+footer {
+  outline: 1px solid black;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 600px;
+  max-width: 1280px;
+}
+
+header,
+footer {
+  height: 200px;
+
+}
+
+.left {
+  width: 200px;
+  float: left;
+  height: 400px;
+}
+
+.content {
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 400px;
+}
+
+.right {
+  width: 200px;
+  float: right;
+  height: 400px;
+}
