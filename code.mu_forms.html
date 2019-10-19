@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1> Элементы форм:</h1>
+  <ol>
+    <li><b>form</b> (<i>action, method, target, enctype</i>) - создаёт форму. Данные могут быть обработаны с помощью PHP или JavaScript. Служит контейнером для тегов input, select, button, fieldset. Отправка формы через кнопку input type:submit или через button</li>
+    <li><b>input</b> <input type="text">(<i>type [text | password | checkbox | radio | hidden | button | submit | reset | file], value, placeholder, name, disabled, pattern, required</i>) - создает различные элементы формы (поля ввода, checkbox, radio, кнопку). Не требует закрывания. <br> Новые в HTML5 [<i>email | number | url | tel | search | color | date | month | week | datetime | datetime-local | range</i>]</li>
+    <li><b>checkbox</b> <input type="checkbox"></li>
+    <li><b>radio</b> <input type="radio"></li>
+    <li><b>submit</b> <input type="submit"></li>
+    <li><b>label</b> (<i>for, accesskey</i>) - задаёт метку для поля ввода input, textarea, select и т.д. Привязывается по id поля ввода. Input может быть вне тега label или внутри его, тогда id указывать  не нужно</li>
+    <li><b>textarea</b> <textarea name="" id="" cols="30" rows="5"></textarea>(<i>name, id, cols, rows, resize, pattern, required</i>) - многострочное поле ввода. Внутри тега можно поместить текст в поле по умолчанию без аттрибута value. Подсказка для ввода с помощью placeholder.</li>
+    <li><b>select</b> <select name="" id=""><option value="">Первый пункт</option>
+    <option value="">Второй пункт</option>
+    <option value="">Третий пункт</option>
+    <option value="">Четвертый пункт</option>
+    <option value="">Пятый пункт</option></select> (<i>multiple, name</i>)- создает выпадающий список. Отдельный пункт списка должен храниться в теге option. Тег option selected выбирает пункт по умолчанию. Multiple позволяет выбрать несколько пунктов меню (select multiple name="items[]").</li>
+    <li><b>button</b> <button></button> (<i>type [button | submit | reset]</i>)- создает кнопку</li>
+    <li><b>fieldset</b> <fieldset><legend>Данные пользователя</legend><input type="text" value="Номер кредитной карты"></fieldset>- группирует поля HTML формы рамкой. Подпись рамки с помощью тега legend, поле ввода input</li>
+    <li><b>value</b> - может задавать текст, отображаемый внутри поля ввода. Для radio задают разные значения. Для отмеченного чекбокса отсылается значение атрибута, если атрибута нет - отсылается значение "on". Для кнопки отображает надпись на кнопке.</li>
+    <li><b>placeholder</b> - подсказка в поле ввода. Пропадает автоматически при попытке ввести текст. Можно применить CSS стили.</li>
+    <li><b>::placeholder</b></li>
+    <li><b>checked</b></li>
+    <li><b>checked</b></li>
+    <li><b>resize</b> (<i>both | horizontal | vertical | none</i>) - запрещает или разрешает изменение размеров textarea. Можно ограничить минимальные и максимальные размеры с помощью max-width, max-width, max-height, max-height</li>
+  </ol>
+
+  <form action="" method="GET">
+    <label><input type="text" name="input1" placeholder="Login">Введите логин (input внутри тега label)</label><br><br>
+    <label for="pass">Введите пароль</label>
+    <input type="password" placeholder="Password" id="pass"> (input после тега label, привязка по id)<br><br>
+    <input type="checkbox">
+    <input type="checkbox" checked>
+    <input type="radio" name="radio">
+    <input type="radio" name="radio">
+    <br><br>
+    <textarea></textarea><br><br>
+    <input type="button" value="Кнопка">
+    <input type="submit">
+    <input type="reset">
+    <input type="file">
+    
+  </form>
+</body>
+
+</html>
