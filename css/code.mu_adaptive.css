@@ -1,0 +1,63 @@
+@media screen and (max-width: 480px) {
+  #test_media h1 {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  #test_media h1 {
+    color: green;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #test_media h1 {
+    color: blue;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  border: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block {
+  background-color: green;
+  height: 300px;
+  width: 24%;
+
+}
+
+@media screen and (max-width: 1280px) {
+  .block {
+    width: 49%;
+    background-color: forestgreen;
+      margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .block {
+    width: 95%;
+    margin: 5px auto;
+    background-color: forestgreen;
+  }
+  
+}
+
+
