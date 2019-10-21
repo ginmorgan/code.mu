@@ -60,4 +60,71 @@ h1 {
   
 }
 
+/* Адаптив с блоками-обезьянами */
 
+.wrap {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.wrap h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+/*    border: 1px solid red;*/
+}
+
+.monkey {
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid green;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.monkey:not(:nth-last-child(3n)) {
+    margin-right: 2%;
+}
+
+.monkey img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 354px;
+}
+
+.monkey p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    .monkey {
+        width: 100%;
+    }
+    
+    .wrap {
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrap {
+        font-size: 6px;
+    }
+    
+    .wrap h2 {
+        font-variant: small-caps;
+    }
+}
