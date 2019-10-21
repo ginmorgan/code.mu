@@ -5,27 +5,245 @@
 */
 
 .box {
-    display: block;
-    width: 150px;
-/*    height: 50px;*/
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    margin-bottom: 5px;
-    text-align:start;
-    padding: 10px;
-        font-weight: bold;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+  display: block;
+  width: 150px;
+  /*    height: 50px;*/
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  text-align: start;
+  padding: 10px;
+  font-weight: bold;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 .box:hover {
-    width: 200px;
-    background-color: black;
-    color: whitesmoke;
+  width: 200px;
+  background-color: black;
+  color: whitesmoke;
 
-    border-radius: 0 20px 20px 0;
-/*    box-shadow: 20px 0px 10px;*/
+  border-radius: 0 20px 20px 0;
+  /*    box-shadow: 20px 0px 10px;*/
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Смена цвета фона бокса */
+.box_1 {
+  width: 180px;
+  height: 100px;
+  border: 1px solid red;
+  transition: all 1s;
+}
+
+.box_1:hover {
+  background-color: red;
+}
+
+/* Изменение цвета фона и цвета текста */
+.box_2 {
+  width: 180px;
+  height: 100px;
+  border: 1px solid red;
+  transition: all 1s;
+}
+
+.box_2:hover {
+  color: white;
+  background-color: red;
+}
+
+/* Изменение ширины бокса */
+.box_3 {
+  width: 180px;
+  height: 50px;
+  border: 1px solid red;
+  transition: all 1.5s;
+}
+
+.box_3:hover {
+  width: 600px;
+}
+
+/* Изменение ширины и размера текста */
+.box_4 {
+  width: 180px;
+  height: 50px;
+  color: red;
+  border: 1px solid red;
+  transition: all 1.5s;
+}
+
+.box_4:hover {
+  width: 600px;
+  font-size: 24px;
+}
+
+/* Изменение ширины и "выезд" блока вправо */
+.box_5 {
+  width: 180px;
+  height: 50px;
+  border: 1px solid red;
+  transition: all 2s;
+}
+
+.box_5:hover {
+  width: 400px;
+  margin-left: 150px;
+}
+
+/* Появление текста справа в центр блока */
+.box_6 {
+  width: 180px;
+  height: 50px;
+  border: 1px solid red;
+  transition: text-indent 1s;
+  overflow-x: hidden;
+  line-height: 50px;
+  text-indent: 2000px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.box_6:hover {
+  text-indent: 0px;
+}
+
+/* Изменение ширины с задержкой в 3 секунды */
+.box_7 {
+  width: 180px;
+  height: 50px;
+  border: 1px solid red;
+  transition: 3s width 3s linear;
+}
+
+.box_7:hover {
+  width: 600px;
+}
+
+/* Инпут в фокусе */
+
+input {
+  box-sizing: border-box;
+  width: 180px;
+  height: 30px;
+  transition: all 2s;
+  padding: 5px;
+}
+
+input:focus {
+  width: 360px;
+  box-shadow: inset 2px 1px 1px 0px gray;
+  ;
+}
+
+/* При наведении на зеленый блок, все красные блоки плавно увеличат свою ширину */
+
+.box_8 {
+  width: 600px;
+  border: 1px solid green;
+}
+
+.box_8 .box_3 {
+  width: 180px;
+  height: 30px;
+  border: 1px solid red;
+  transition: all 1.5s;
+  margin: 20px;
+}
+
+.box_8:hover > .box_3 {
+  width: 560px;
+}
+
+/* Изменение ширины следующего блока */
+.box_9 {
+  width: 600px;
+  border: 1px solid green;
+}
+
+.box_9 .box_3 {
+  width: 180px;
+  height: 30px;
+  border: 1px solid red;
+  transition: all 1.5s;
+  margin: 20px;
+}
+
+.box_3:hover + .box_3 {
+  /* + отвечает за следующие элемент, ~ (тильда) за все следующие элементы */
+  width: 560px;
+}
+
+/* Изменение ширины блока через 1 */
+.box_10 {
+  width: 600px;
+  border: 1px solid green;
+}
+
+.box_11 {
+  width: 180px;
+  height: 30px;
+  border: 1px solid red;
+  transition: all 1.5s;
+  margin: 20px;
+}
+
+.box_11:hover + div + div {
+  width: 70%;
+}
+
+/* Вылетающая подсказка */
+
+.box_12 {
+  width: 50%;
+  margin: 0 auto;
+  height: 30px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 30px;
+
+}
+
+.box_13 {
+  width: 400px;
+  height: 30px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  background-color: red;
+  overflow-x: hidden;
+  transition: all 1s;
+  margin: 0 -450px;
+}
+
+.box_12:hover + div {
+  margin-left: 30%;
+}
+
+/* Индикатор заполняется при наведении */
+.box_14 {
+  width: 40%;
+  height: 30px;
+  border: 1px solid red;
+  margin: 0 auto;
+  color: red;
+}
+
+.box_15 {
+  width: 0%;
+  height: 30px;  
+  background-color: red;
+  transition: 3s width 0s linear;
+}
+
+.box_14:hover .box_15 {
+  width: 100%;
 }
