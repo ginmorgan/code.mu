@@ -1,0 +1,160 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+p.keywords {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 3px 3px 3px;
+}
+/**/
+.anim_box {
+  width: 1000px;
+  height: 150px;
+  display: flex;
+  border: 1px solid gray;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.anim1 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.anim_box .a:hover {
+  transform: rotate(45deg);
+}
+
+.anim_box .b:hover {
+  transform: scale(2);
+}
+
+.anim_box .c:hover {
+  transform: skewX(45deg);
+}
+
+.anim_box .d:hover {
+  transform: translate(20px);
+}
+
+.anim_box .e:hover {
+  transform: translate(-10px,-10px);
+}
+
+.anim2 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin-left: 20%;
+}
+
+.anim2:hover {
+  transform-origin: left top;
+  transform: scale(2);
+}
+
+.anim3 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+    margin-left: 20%;
+    text-align: center;
+  line-height: 100px;
+}
+
+.anim3:hover {
+  transform: scale(2);
+  border-radius: 50px 20px;
+  background-color: yellow;
+}
+
+img {
+  width: 130px;
+  margin: 0px;
+  padding: 0px;
+  transition: 1s;
+  margin-left: 15%;
+  box-shadow: 1px 1px 3px;
+}
+
+img:hover {
+  transform: scale(2);
+}
+
+.anim4 {
+  display: inline-block;
+  border: 1px solid blue;
+  color: blue;
+  font-size: 18px;
+  transition: 1s;
+}
+
+a {
+  margin: 20px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.anim4:hover {
+  transform: rotate(350deg);
+}
+
+.planet{
+  border: 1px solid gray;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.star_1 {
+  position: relative;
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  left: 30%;
+  top: 30%;
+  border-radius: 100px;
+      
+  animation-name: movie;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.star_2 {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  transition: 5s;
+  animation: color 5s linear infinite;
+}
+
+@keyframes movie {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes color {
+  0% {background-color: white;}
+  30% {background-color: blue;}
+  60% {background-color: red;}
+  100% {background-color: white;}
+}
